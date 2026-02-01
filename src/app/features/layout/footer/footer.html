@@ -1,0 +1,73 @@
+<footer class="relative bg-black text-white">
+	<div class="absolute inset-0 -z-10 bg-linear-to-b from-purple-950/40 via-black to-black"></div>
+	<div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-purple-500/50 to-transparent"></div>
+
+	<div class="mx-auto max-w-7xl px-4 pb-10 pt-16 sm:px-6 lg:px-8">
+		<div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
+			<div class="space-y-4">
+				<div class="flex items-center gap-3">
+					<span class="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/15 text-purple-300 ring-1 ring-purple-500/30">
+						<lucide-angular [img]="icons.ArrowUpRight" size="18"></lucide-angular>
+					</span>
+					<div>
+						<p class="text-lg font-semibold tracking-wide">Tu Nombre</p>
+						<p class="text-sm text-white/60">UI/UX Designer & Frontend Dev</p>
+					</div>
+				</div>
+				<p class="text-sm leading-relaxed text-white/70">
+					Construyo experiencias digitales con enfoque en diseño, accesibilidad y rendimiento.
+				</p>
+				<div class="flex items-center gap-3">
+					<a class="rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-2 text-sm font-semibold text-purple-200 transition hover:border-purple-400/60 hover:bg-purple-500/20" href="mailto:hello@portfolio.com">
+						Hablemos
+					</a>
+					<a class="text-sm font-medium text-white/60 transition hover:text-purple-200" href="#contacto">Agendar llamada</a>
+				</div>
+			</div>
+
+			<div>
+				<h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300">Navegación</h3>
+				<ul class="mt-4 space-y-3 text-sm text-white/70">
+					<li><a class="transition hover:text-purple-200" href="#sobre-mi">Sobre mí</a></li>
+					<li><a class="transition hover:text-purple-200" href="#proyectos">Proyectos</a></li>
+					<li><a class="transition hover:text-purple-200" href="#habilidades">Habilidades</a></li>
+					<li><a class="transition hover:text-purple-200" href="#contacto">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300">Servicios</h3>
+				<ul class="mt-4 space-y-3 text-sm text-white/70">
+					<li>Diseño UI/UX</li>
+					<li>Landing pages</li>
+					<li>Design systems</li>
+					<li>Frontend Angular</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300">Redes</h3>
+				<div class="mt-4 flex items-center gap-3">
+					<a class="rounded-full p-2 text-white/70 transition hover:text-purple-200 hover:bg-purple-500/10" href="https://github.com" aria-label="GitHub" rel="noreferrer" target="_blank">
+						<lucide-angular [img]="icons.Github" size="18"></lucide-angular>
+					</a>
+					<a class="rounded-full p-2 text-white/70 transition hover:text-purple-200 hover:bg-purple-500/10" href="https://linkedin.com" aria-label="LinkedIn" rel="noreferrer" target="_blank">
+						<lucide-angular [img]="icons.Linkedin" size="18"></lucide-angular>
+					</a>
+					<a class="rounded-full p-2 text-white/70 transition hover:text-purple-200 hover:bg-purple-500/10" href="mailto:hello@portfolio.com" aria-label="Correo">
+						<lucide-angular [img]="icons.Mail" size="18"></lucide-angular>
+					</a>
+				</div>
+				<p class="mt-4 text-xs text-white/50">Disponible para proyectos freelance.</p>
+			</div>
+		</div>
+
+		<div class="mt-12 flex flex-col items-start justify-between gap-4 border-t border-purple-500/15 pt-6 text-xs text-white/60 sm:flex-row sm:items-center">
+			<p>© {{ currentYear }} Tu Nombre. Todos los derechos reservados.</p>
+			<div class="flex items-center gap-4">
+				<a class="transition hover:text-purple-200" href="#">Política de privacidad</a>
+				<a class="transition hover:text-purple-200" href="#">Términos</a>
+			</div>
+		</div>
+	</div>
+</footer>

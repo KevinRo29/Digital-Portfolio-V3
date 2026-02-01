@@ -21,17 +21,17 @@
 					<a class="rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-2 text-sm font-semibold text-purple-200 transition hover:border-purple-400/60 hover:bg-purple-500/20" href="mailto:hello@portfolio.com">
 						Hablemos
 					</a>
-					<a class="text-sm font-medium text-white/60 transition hover:text-purple-200" href="#contacto">Agendar llamada</a>
+					<a class="text-sm font-medium text-white/60 transition hover:text-purple-200" [routerLink]="['/home']" fragment="contacto">Agendar llamada</a>
 				</div>
 			</div>
 
 			<div>
 				<h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300">Navegación</h3>
 				<ul class="mt-4 space-y-3 text-sm text-white/70">
-					<li><a class="transition hover:text-purple-200" href="#sobre-mi">Sobre mí</a></li>
-					<li><a class="transition hover:text-purple-200" href="#proyectos">Proyectos</a></li>
-					<li><a class="transition hover:text-purple-200" href="#habilidades">Habilidades</a></li>
-					<li><a class="transition hover:text-purple-200" href="#contacto">Contacto</a></li>
+					<li><a class="transition hover:text-purple-200" [routerLink]="['/home']" fragment="sobre-mi">Sobre mí</a></li>
+					<li><a class="transition hover:text-purple-200" [routerLink]="['/home']" fragment="proyectos">Proyectos</a></li>
+					<li><a class="transition hover:text-purple-200" [routerLink]="['/home']" fragment="habilidades">Habilidades</a></li>
+					<li><a class="transition hover:text-purple-200" [routerLink]="['/home']" fragment="contacto">Contacto</a></li>
 				</ul>
 			</div>
 
@@ -71,3 +71,4 @@
 		</div>
 	</div>
 </footer>
+

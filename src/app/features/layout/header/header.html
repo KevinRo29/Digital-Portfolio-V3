@@ -4,7 +4,7 @@
 
 	<nav class="backdrop-blur-xl bg-black/60 border-b border-purple-500/15">
 		<div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-			<a class="group flex items-center gap-3" href="#home" aria-label="Inicio">
+			<a class="group flex items-center gap-3" [routerLink]="['/home']" fragment="home" aria-label="Inicio">
 				<span class="flex h-9 w-9 items-center justify-center rounded-xl bg-purple-500/15 text-purple-300 ring-1 ring-purple-500/30 shadow-[0_0_20px_rgba(139,92,246,0.25)]">
 					<lucide-angular [img]="icons.Sparkles" size="18"></lucide-angular>
 				</span>
@@ -15,14 +15,14 @@
 			</a>
 
 			<div class="hidden items-center gap-8 lg:flex">
-				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" href="#sobre-mi">Sobre mí</a>
-				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" href="#proyectos">Proyectos</a>
-				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" href="#habilidades">Habilidades</a>
-				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" href="#contacto">Contacto</a>
+				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" [routerLink]="['/home']" fragment="sobre-mi">Sobre mí</a>
+				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" [routerLink]="['/home']" fragment="proyectos">Proyectos</a>
+				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" [routerLink]="['/home']" fragment="habilidades">Habilidades</a>
+				<a class="text-sm font-medium text-white/70 transition hover:text-purple-200" [routerLink]="['/home']" fragment="contacto">Contacto</a>
 			</div>
 
 			<div class="hidden items-center gap-3 lg:flex">
-				<a class="rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-2 text-sm font-semibold text-purple-200 transition hover:border-purple-400/60 hover:bg-purple-500/20" href="#contacto">
+				<a class="rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-2 text-sm font-semibold text-purple-200 transition hover:border-purple-400/60 hover:bg-purple-500/20" [routerLink]="['/home']" fragment="contacto">
 					Agenda una llamada
 				</a>
 				<div class="flex items-center gap-2">
@@ -49,10 +49,10 @@
 		@if (isMenuOpen()) {
 			<div class="border-t border-purple-500/15 bg-black/80 px-4 py-4 lg:hidden">
 				<div class="flex flex-col gap-3">
-					<a class="rounded-xl bg-purple-500/10 px-4 py-3 text-sm font-semibold text-purple-100" href="#sobre-mi" (click)="closeMenu()">Sobre mí</a>
-					<a class="rounded-xl bg-purple-500/5 px-4 py-3 text-sm font-medium text-white/80" href="#proyectos" (click)="closeMenu()">Proyectos</a>
-					<a class="rounded-xl bg-purple-500/5 px-4 py-3 text-sm font-medium text-white/80" href="#habilidades" (click)="closeMenu()">Habilidades</a>
-					<a class="rounded-xl bg-purple-500/5 px-4 py-3 text-sm font-medium text-white/80" href="#contacto" (click)="closeMenu()">Contacto</a>
+					<a class="rounded-xl bg-purple-500/10 px-4 py-3 text-sm font-semibold text-purple-100" [routerLink]="['/home']" fragment="sobre-mi" (click)="closeMenu()">Sobre mí</a>
+					<a class="rounded-xl bg-purple-500/5 px-4 py-3 text-sm font-medium text-white/80" [routerLink]="['/home']" fragment="proyectos" (click)="closeMenu()">Proyectos</a>
+					<a class="rounded-xl bg-purple-500/5 px-4 py-3 text-sm font-medium text-white/80" [routerLink]="['/home']" fragment="habilidades" (click)="closeMenu()">Habilidades</a>
+					<a class="rounded-xl bg-purple-500/5 px-4 py-3 text-sm font-medium text-white/80" [routerLink]="['/home']" fragment="contacto" (click)="closeMenu()">Contacto</a>
 					<a class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl border border-purple-400/30 bg-purple-500/15 px-4 py-3 text-sm font-semibold text-purple-100" href="mailto:hello@portfolio.com" (click)="closeMenu()">
 						<lucide-angular [img]="icons.Mail" size="16"></lucide-angular>
 						Enviar correo
@@ -70,3 +70,4 @@
 		}
 	</nav>
 </header>
+

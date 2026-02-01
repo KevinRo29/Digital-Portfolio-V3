@@ -1,0 +1,50 @@
+<section [id]="sectionId" [class]="sectionClass">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="text-xs uppercase tracking-[0.4em] text-purple-300">{{ eyebrow }}</p>
+        <h2 class="mt-2 text-3xl font-semibold sm:text-4xl">{{ title }}</h2>
+      </div>
+      @if (asideText) {
+        <p class="max-w-md text-sm text-white/60">{{ asideText }}</p>
+      }
+      @if (ctaLabel) {
+        <a class="inline-flex items-center gap-2 text-sm font-semibold text-purple-200 transition hover:text-purple-100" [routerLink]="ctaRoute" [fragment]="ctaFragment">
+            {{ ctaLabel }}
+            @if (ctaIcon) {
+                <lucide-angular [img]="ctaIcon" size="16"></lucide-angular>
+            }
+        </a>
+      }
+    </div>
+
+    <div class="mt-10 grid gap-6" [ngClass]="variant === 'projects' ? 'lg:grid-cols-3' : 'md:grid-cols-3'">
+        @for (item of items; track $index) {
+            <article [ngClass]="variant === 'projects'
+                  ? 'group rounded-3xl border border-purple-500/20 bg-linear-to-br from-purple-500/10 via-black/70 to-black/90 p-6 transition hover:border-purple-400/60'
+                  : 'rounded-3xl border border-purple-500/20 bg-linear-to-br from-purple-500/10 via-black/70 to-black/90 p-6'
+              "
+            >
+            @if (variant === 'skills') {
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-500/15 text-purple-300">
+                  <lucide-angular [img]="item.icon" size="20"></lucide-angular>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">{{ item.title }}</h3>
+              <p class="mt-2 text-sm text-white/70">{{ item.description }}</p>
+            }
+      
+            @if (variant === 'projects') {
+                <p class="text-xs uppercase tracking-[0.3em] text-purple-300">{{ item.eyebrow }}</p>
+                <h3 class="mt-3 text-xl font-semibold">{{ item.title }}</h3>
+                <p class="mt-2 text-sm text-white/70">{{ item.description }}</p>
+                <div class="mt-6 flex items-center gap-3 text-xs text-white/60">
+                  @for (tag of item.tags; track $index) {
+                      <span class="rounded-full border border-purple-500/20 bg-purple-500/10 px-3 py-1">{{ tag }}</span>
+                  }
+                </div>
+            }
+            </article>
+        }
+    </div>
+  </div>
+</section>

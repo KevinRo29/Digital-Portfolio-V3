@@ -1,9 +1,10 @@
 import { LucideAngularModule, Menu, X, Sparkles, Github, Linkedin, Mail, } from 'lucide-angular';
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'header-layout',
-  imports: [LucideAngularModule],
+  imports: [LucideAngularModule, RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

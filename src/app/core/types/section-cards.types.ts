@@ -1,0 +1,1 @@
+export type SectionCardsVariant = 'skills' | 'projects';

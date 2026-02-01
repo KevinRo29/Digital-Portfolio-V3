@@ -25,44 +25,44 @@ export class Home {
     Briefcase,
   };
 
-  readonly skillsAside = 'Soluciones integrales desde discovery hasta el lanzamiento, con foco en conversiones y retención.';
+  readonly skillsAside = 'Experiencia en proyectos de empresa con foco en resultados. Los proyectos personales llegarán pronto y serán el espacio para experimentar.';
 
   readonly skillsCards: SectionCard[] = [
     {
       icon: Palette,
-      title: 'Brand & UI Design',
-      description: 'Interfaces coherentes, modernas y con identidad sólida para productos digitales.',
+      title: 'UI para producto',
+      description: 'Interfaces consistentes y orientadas a negocio dentro de equipos de producto.',
     },
     {
       icon: Rocket,
-      title: 'Product Strategy',
-      description: 'Definición de roadmap, MVP y métricas para acelerar el time-to-market.',
+      title: 'Ejecución en equipo',
+      description: 'Colaboración con PM y devs para aterrizar requerimientos y mejorar flujos.',
     },
     {
       icon: Code2,
       title: 'Frontend Delivery',
-      description: 'Implementación precisa con Angular, Bootstrap y mejores prácticas.',
+      description: 'Implementación con Angular, Bootstrap y buenas prácticas en proyectos reales.',
     },
   ];
 
   readonly projectsCards: SectionCard[] = [
     {
-      eyebrow: 'Fintech',
-      title: 'Dashboard analítico 360°',
-      description: 'Incremento del 32% en retención con nuevo flujo de onboarding.',
-      tags: ['UX Research', 'Angular'],
+      eyebrow: 'Optimización',
+      title: 'Aplicación 95% más eficiente',
+      description: 'Optimización integral que redujo tiempos de carga y mejoró el rendimiento hasta en 95%.',
+      tags: ['Performance', 'Angular'],
     },
     {
-      eyebrow: 'SaaS',
-      title: 'Sistema de pricing inteligente',
-      description: '+18% conversión con narrativa visual y microinteracciones.',
-      tags: ['UI Design', 'Bootstrap'],
+      eyebrow: 'CRM',
+      title: 'Homologación y actualización desde cero',
+      description: 'Unificación de procesos y rediseño completo para un CRM actualizado desde 0.',
+      tags: ['Product Design', 'Bootstrap'],
     },
     {
-      eyebrow: 'E-commerce',
-      title: 'Checkout de alta conversión',
-      description: 'Reducción del 27% en abandono del carrito.',
-      tags: ['Product Design', 'A/B Testing'],
+      eyebrow: 'Proyecto personal',
+      title: 'En construcción',
+      description: 'Próximamente compartiré casos personales y exploraciones de producto.',
+      tags: ['Side Project', 'Exploración'],
     },
   ];
 }

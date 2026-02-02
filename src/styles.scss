@@ -9,3 +9,13 @@ lucide-angular svg {
   height: 1em;
   flex: 0 0 1em;
 }
+
+/* Importar fontes personalizadas (assets/fonts) */
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
